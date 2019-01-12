@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="ZYX">
 <meta property="og:description" content="走出的第一步 前 言  大三的时候就想搭建博客了，一个属于自己的博客，记录着自己的故事。回忆当初想搭建博客，是想记录一下自己学习的过程。之前都是用笔记本来记录，不过笔记本很少翻。之后在学习的过程中都是看别人的博客居多，发现博客用来记录学习内容也是挺不错的，于是就有了这个博客的搭建。从有想法开始到今天搭建成功，中间应为很多事情耽误了，毕业设计，考研，接近两年了，我终于搭出来了，这里我就简单记录一下。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-12T13:56:53.365Z">
+<meta property="og:updated_time" content="2019-01-12T14:06:31.802Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客搭建笔记">
 <meta name="twitter:description" content="走出的第一步 前 言  大三的时候就想搭建博客了，一个属于自己的博客，记录着自己的故事。回忆当初想搭建博客，是想记录一下自己学习的过程。之前都是用笔记本来记录，不过笔记本很少翻。之后在学习的过程中都是看别人的博客居多，发现博客用来记录学习内容也是挺不错的，于是就有了这个博客的搭建。从有想法开始到今天搭建成功，中间应为很多事情耽误了，毕业设计，考研，接近两年了，我终于搭出来了，这里我就简单记录一下。">
@@ -198,9 +198,19 @@
 <ol>
 <li>新建博客，使用指令<code>hexo new &quot;name&quot;</code> ，<code>name</code>是新建文件的名字，不能是中文。这个文件是放在在建站的那个文件夹（我这里是<code>Hexo</code>文件夹）<code>\source\_posts</code>文件夹下。</li>
 <li>打开该md文件，用markdown编写内容</li>
-<li>鼠标右键<code>hexo</code>文件夹<code>Git Bush Here</code>,输入一下指令：<br> hexo g  # 生成本地发布文件夹<br> hexo d  # 最后发布到github pages上  </li>
+<li>鼠标右键<code>hexo</code>文件夹<code>Git Bush Here</code>,输入一下指令：<br> <em>hexo g  # 生成本地发布文件夹</em><br> <em>hexo d  # 最后发布到github pages上</em>  </li>
 <li>刷新一下<code>gitname.github.io</code>网址，就能看见新的博客生成</li>
 </ol>
+<blockquote>
+<p>问题解决</p>
+</blockquote>
+<p>使用<code>hexo new &quot;name&quot;</code>新建md文件时，以下内容不能删除，可以修改，这个是yilia主题格式要求，会在文章开头显示标题、右上角显示时间。</p>
+<pre><code>---
+title: 
+date: 
+tags: 
+---
+</code></pre><p>删除之后，使用<code>hexo g</code>会出现错误。</p>
 <hr>
 
       
@@ -293,16 +303,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-  
-    <a href="/2019/01/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
